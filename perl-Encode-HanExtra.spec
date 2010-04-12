@@ -9,12 +9,12 @@ Summary:	Encode::HanExtra - Extra sets of Chinese encodings
 Summary(pl.UTF-8):	Encode::HanExtra - Dodatkowe zestawy mapowań chińskich
 Name:		perl-Encode-HanExtra
 Version:	0.23
-Release:	0.1
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Encode/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	c36bc77760559080fc6ea9608300b73a
+# Source0-md5:	e1d3bc32c1c8ee304235a06fbcd5d5a4
 URL:		http://search.cpan.org/dist/Encode-HanExtra/
 BuildRequires:	perl(Encode) >= 2.09
 %{?with_tests:BuildRequires:  perl-Module-Signature}
@@ -61,11 +61,11 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes
-%attr(755,root,root) %{_bindir}/*
 %{perl_vendorarch}/Encode/HanExtra.pm
-%dir %{perl_vendorarch}/Encode/HanExtra
-%{perl_vendorarch}/Encode/HanExtra/*.pm
+%dir %{perl_vendorarch}/Encode/TW
+%dir %{perl_vendorarch}/Encode/TW/Unisys
+%{perl_vendorarch}/Encode/TW/Unisys/*.pm
 %dir %{perl_vendorarch}/auto/Encode/HanExtra
 %{perl_vendorarch}/auto/Encode/HanExtra/HanExtra.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Encode/HanExtra/HanExtra.so
-%{_mandir}/man1/*
+%{_mandir}/man3/*.3*
