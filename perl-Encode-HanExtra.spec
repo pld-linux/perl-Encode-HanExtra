@@ -66,6 +66,5 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{perl_vendorarch}/Encode/TW/Unisys
 %{perl_vendorarch}/Encode/TW/Unisys/*.pm
 %dir %{perl_vendorarch}/auto/Encode/HanExtra
-%{perl_vendorarch}/auto/Encode/HanExtra/HanExtra.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Encode/HanExtra/HanExtra.so
 %{_mandir}/man3/*.3*
