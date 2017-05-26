@@ -16,7 +16,7 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Encode/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	e1d3bc32c1c8ee304235a06fbcd5d5a4
 URL:		http://search.cpan.org/dist/Encode-HanExtra/
-BuildRequires:	perl(Encode) >= 2.09
+BuildRequires:	perl-Encode >= 2.09
 %{?with_tests:BuildRequires:  perl-Module-Signature}
 BuildRequires:	perl-devel >= 1:5.7.3
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -64,7 +64,8 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorarch}/Encode/HanExtra.pm
 %dir %{perl_vendorarch}/Encode/TW
 %dir %{perl_vendorarch}/Encode/TW/Unisys
-%{perl_vendorarch}/Encode/TW/Unisys/*.pm
+%{perl_vendorarch}/Encode/TW/Unisys/SOSI*.pm
 %dir %{perl_vendorarch}/auto/Encode/HanExtra
 %attr(755,root,root) %{perl_vendorarch}/auto/Encode/HanExtra/HanExtra.so
-%{_mandir}/man3/*.3*
+%{_mandir}/man3/Encode::HanExtra.3*
+%{_mandir}/man3/Encode::TW::Unisys::SOSI*.3*
