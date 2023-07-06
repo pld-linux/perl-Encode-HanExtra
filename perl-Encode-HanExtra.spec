@@ -8,7 +8,7 @@ Summary:	Encode::HanExtra - Extra sets of Chinese encodings
 Summary(pl.UTF-8):	Encode::HanExtra - Dodatkowe zestawy mapowań chińskich
 Name:		perl-Encode-HanExtra
 Version:	0.23
-Release:	15
+Release:	16
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
